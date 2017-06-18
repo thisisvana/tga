@@ -1,0 +1,23 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the button component.
+// -----------------------------------------------------------------------------
+
+.btn {
+        width: 10rem;
+        padding: 0.5rem 1rem;
+        background-color: $brand-color;
+        text-align: center;
+        color: rgba(254, 254, 254, 1.0);
+        border: 0.1rem solid $brand-color;
+        a{
+          text-decoration: none;
+        }
+        &:hover {
+          border: 0.1rem solid $brand-color;
+          background-color: white;
+          color:$brand-color;
+          cursor: pointer;
+        }
+
+
+}

@@ -1,0 +1,90 @@
+.sidebar-contact {
+
+  background-image: url("../img/yellow.jpg");
+
+}
+.contact-page{
+  background-image: url("../img/barcabw.jpg");
+}
+.contact-form {
+  width: 60%;
+  margin: 2rem auto 0;
+  // height: 80vh;
+}
+// .form-group{
+// 	// margin-bottom: 20px;
+// }
+
+.controls{
+	text-align: left;
+	position: relative;
+	input[type="text"],
+	input[type="email"],
+  input[type="number"],
+  input[type="date"],
+	input[type="tel"],
+	textarea,
+	button,
+	select {
+		padding: 12px;
+		font-size: 14px;
+		border: 1px solid $brand-color;
+		width: 100%;
+		margin-bottom: 18px;
+		color: #888;
+		font-family: 'Lato', 'sans-serif';
+		font-size: 16px;
+		font-weight: 300;
+
+		transition: all .3s;
+
+		&:focus, &:hover{
+			outline: none;
+			border-color: $brand-color;
+			+ label{
+				color: $text-color;
+          cursor: text;
+			}
+		}
+	}
+
+	.fa-sort{
+		position:absolute;
+		right: 10px;
+		top: 17px;
+		color: #999;
+	}
+	select{
+		// @include appearance(none);
+		cursor: pointer;
+	}
+	label{
+		position: absolute;
+		left: 8px;
+		top: 12px;
+     width: 60%;
+     color: #999;
+		font-size: 16px;
+		display: inline-block;
+		padding: 4px 10px;
+		font-weight: 400;
+		background-color: rgba(255,255,255,0);
+		transition: color .3s, top .3s, background-color .8s;
+     background-color: rgba(255,255,255,1);
+
+    &.active{
+			top: -11px;
+			color: #555;
+      background-color: rgba(255,255,255,1);
+      width: auto;
+		}
+	}
+
+}
+.map {
+  iframe {
+    width: 100%;
+    border:none;
+    filter:grayscale(100%);
+  }
+}

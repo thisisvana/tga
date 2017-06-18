@@ -1,0 +1,127 @@
+
+// This file contains styles that are specific to the home page.
+// -----------------------------------------------------------------------------
+
+.title{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin:auto;
+  width:8rem;
+  height: 69.6vh;
+  // background-color: rgba(44, 49, 58, 0.5);
+  padding: 0;
+
+}
+.sidebar {
+  padding: 0;
+  // margin:0 -2rem;
+
+}
+.sidebar-home {
+  background-image: url("../img/yellow.jpg");
+}
+.side-pattern{
+  display: flex;
+  flex-direction: column;
+  height: 70vh;
+  border: 0.2rem solid rgba(44, 49, 58, 1.0);
+  // margin-bottom: 2rem;
+
+  @media screen and (min-width: $tablet-min) and (max-width: $tablet-max){
+      height: 20vh;
+
+  }
+  @media screen and (max-width: $mobile-max) {
+      height: 15vh;
+  }
+
+}
+.sample-movie{
+  // border: 0.4rem solid rgba(44, 49, 58, 1.0);
+  height: 50vh;
+  overflow:hidden;
+  // margin: 0 -2rem;
+
+}
+
+.featured-item {
+  // border: 0.2rem solid rgba(44, 49, 58, 1.0);
+  padding: 2rem;
+  img{
+    border: 0.1rem solid rgba(44, 49, 58, 1.0);
+  }
+  // background-image: url("../img/barcabw.jpg");
+}
+
+.feat{
+  background-color:rgba(44, 49, 58, 1.0);
+  // border: 0.1rem solid rgba(44, 49, 58, 1.0);
+  height: 15vh;
+}
+.heading-para {
+  margin: 3rem 0;
+
+}
+.bg-heading {
+
+    text-align: center;
+    color: $mid-grey;
+    letter-spacing: 1rem;
+
+}
+
+
+.certified-item{
+
+  margin-top: 8rem;
+  display: flex;
+}
+.sidebar-img{
+  width: 10rem;
+  margin:auto;
+
+}
+.admin-form {
+  width: 100%;
+  margin: 7rem auto;
+
+  padding: 2rem;
+  border: 0.1rem solid $brand-color;
+  background-color: $light-grey;
+
+}
+.t-area {
+  width: 100%;
+  height: 10rem;
+}
+.pack-form{
+  padding: 4rem;
+
+  th{
+    background-color: $brand-color;
+    color: $light-grey;
+  }
+  td{
+    padding: 2rem;
+  }
+}
+.admin-nav {
+  // border: 0.1rem solid $brand-color;
+  background-color: $light-grey;
+
+}
+.admin-menu {
+  list-style: none;
+  padding: 2rem;
+  // background-color: $light-grey;
+  a{
+    &:hover{
+    color: $mid-grey;
+    }
+  }
+}
+.inp {
+  height: 2.5rem;
+  margin-bottom: 2rem;
+}
